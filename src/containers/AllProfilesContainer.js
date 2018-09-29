@@ -5,13 +5,13 @@ import { Grid, Row, Col, Thumbnail, Button } from 'react-bootstrap'
 const users = [
   {
     id: 1,
-    firstName: 'Jane',
-    lastName: 'Doe',
+    firstName: 'Max',
+    lastName: 'Huynh',
   },
   {
     id: 2,
-    firstName: 'Joe',
-    lastName: 'Somebody',
+    firstName: 'Sam',
+    lastName: 'Borak',
   },
   {
     id: 3,
@@ -35,7 +35,28 @@ class AllProfilesContainer extends Component {
         <Row>
 
           {/* ADD ALL PROFILES CREATED ABOVE HERE */}
-          
+          <Col xs={6} md={4} lg={3}>
+          <Thumbnail src="/assets/images/person-placeholder.png">
+          <h3>Max Huynh</h3>
+          <p>
+            <Button bsStyle="primary" onClick={() => this.props.history.push('/?user=' + 1)}>
+            View Profile
+            </Button>
+          </p>
+          </Thumbnail>
+          </Col>
+
+                    <Col xs={6} md={4} lg={3}>
+          <Thumbnail src="/assets/images/person-placeholder.png">
+          <h3>Sam Borak</h3>
+          <p>
+            <Button bsStyle="primary" onClick={() => this.props.history.push('/?user=' + 2)}>
+            View Profile
+            </Button>
+          </p>
+          </Thumbnail>
+          </Col>
+
         </Row>
       </Grid>
     )

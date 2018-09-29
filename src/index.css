@@ -1,8 +1,20 @@
+
+.blue{
+  color:lightblue;
+  font-family:fantasy;
+}
+.text{
+  color:lightpink;
+  font-family:unset;
+}
+
+
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: #fafafa;
+  background-color: #fff3cf;
 }
 
 .padding--sm {
